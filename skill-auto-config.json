@@ -1,0 +1,116 @@
+{
+  "name": "knowledge-base-builder",
+  "displayName": "个人知识库建设",
+  "version": "1.0.0",
+  "description": "17 分钟快速搭建 OpenClaw 个人知识库系统，包含飞书知识库创建、文档导入、分类配置、自动收录等完整流程",
+  "author": {
+    "name": "来合火",
+    "openId": "ou_995935d46da42f3847a5c8caa536353c"
+  },
+  "keywords": [
+    "知识库",
+    "飞书",
+    "文档管理",
+    "技能模块",
+    "OpenClaw",
+    "Wiki",
+    "知识管理"
+  ],
+  "category": "效率工具",
+  "difficulty": "⭐⭐⭐",
+  "estimatedTime": "17 分钟",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/你的用户名/knowledge-base-builder.git"
+  },
+  "homepage": "https://clawhub.ai/你的用户名/knowledge-base-builder",
+  "bugs": {
+    "url": "https://github.com/你的用户名/knowledge-base-builder/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "openclaw": ">=1.0.0"
+  },
+  "dependencies": {
+    "openclaw-sdk": "^1.0.0"
+  },
+  "requiredSkills": [
+    "feishu-create-doc",
+    "feishu-wiki-space",
+    "elite-longterm-memory"
+  ],
+  "optionalSkills": [
+    "content-collector",
+    "find-skills",
+    "agent-browser"
+  ],
+  "permissions": [
+    "feishu:wiki:space",
+    "feishu:docs:doc",
+    "feishu:drive:file",
+    "feishu:bitable:app"
+  ],
+  "features": [
+    "创建飞书知识库空间",
+    "导入 12 个技能模块文档",
+    "配置 8 大分类体系",
+    "建立索引和搜索",
+    "配置 Content Collector 自动收录"
+  ],
+  "usage": {
+    "trigger": "帮我搭建个人知识库",
+    "examples": [
+      "帮我搭建个人知识库",
+      "帮我搭建知识库，使用飞书存储",
+      "帮我搭建本地知识库，不同步到飞书"
+    ]
+  },
+  "config": {
+    "storage": {
+      "type": "string",
+      "enum": ["feishu", "local"],
+      "default": "feishu",
+      "description": "存储方式"
+    },
+    "spaceName": {
+      "type": "string",
+      "default": "OpenClaw 个人知识库",
+      "description": "知识库空间名称"
+    },
+    "categories": {
+      "type": "number",
+      "default": 8,
+      "description": "分类数量"
+    },
+    "autoSync": {
+      "type": "boolean",
+      "default": true,
+      "description": "自动同步"
+    }
+  },
+  "deliverables": {
+    "documents": 9,
+    "categories": 8,
+    "directories": 6,
+    "templates": 9
+  },
+  "metrics": {
+    "installCount": 0,
+    "rating": 0,
+    "reviews": 0
+  },
+  "changelog": {
+    "1.0.0": {
+      "date": "2026-03-18",
+      "changes": [
+        "初始版本发布",
+        "支持飞书知识库创建",
+        "支持 8 大分类体系",
+        "支持 Content Collector 集成",
+        "9 个文档模板"
+      ]
+    }
+  }
+}

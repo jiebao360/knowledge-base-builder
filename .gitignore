@@ -1,0 +1,43 @@
+# 个人知识库建设技能 - .gitignore
+
+# 依赖
+node_modules/
+package-lock.json
+
+# 配置文件（包含敏感信息）
+config/*.json
+!config/example.json
+.env
+.env.local
+
+# 日志
+logs/
+*.log
+npm-debug.log*
+
+# 临时文件
+tmp/
+temp/
+.DS_Store
+Thumbs.db
+
+# 构建输出
+dist/
+build/
+
+# 测试
+coverage/
+.nyc_output/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 本地知识库（如果用户在本地测试）
+test-knowledge-base/
+
+# 报告（可选提交）
+reports/
+!reports/.gitkeep

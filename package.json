@@ -1,0 +1,42 @@
+{
+  "name": "knowledge-base-builder",
+  "version": "1.0.0",
+  "description": "OpenClaw 个人知识库建设技能 - 17 分钟快速搭建完整知识库系统",
+  "author": "来合火 <laihehuo@example.com>",
+  "license": "MIT",
+  "keywords": [
+    "openclaw",
+    "skill",
+    "knowledge-base",
+    "feishu",
+    "wiki",
+    "文档管理",
+    "知识库"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/你的用户名/knowledge-base-builder.git"
+  },
+  "homepage": "https://clawhub.ai/你的用户名/knowledge-base-builder",
+  "bugs": {
+    "url": "https://github.com/你的用户名/knowledge-base-builder/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "openclaw-sdk": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "index.js",
+    "SKILL.md",
+    "README.md",
+    "templates/",
+    "config/"
+  ]
+}
