@@ -41,18 +41,18 @@
 
 ### 方式 1: 从 Clawhub 安装（推荐）
 ```bash
-安装 https://clawhub.ai/你的用户名/knowledge-base-builder
+安装 https://clawhub.ai/jiebao360/knowledge-base-builder
 ```
 
 ### 方式 2: 从 GitHub 安装
 ```bash
-npx skills add 你的用户名/knowledge-base-builder -g -y
+npx skills add jiebao360/knowledge-base-builder -g -y
 ```
 
 ### 方式 3: 手动安装
 ```bash
 # 克隆仓库
-git clone https://github.com/你的用户名/knowledge-base-builder.git
+git clone https://github.com/jiebao360/knowledge-base-builder.git
 
 # 复制到技能目录
 cp -r knowledge-base-builder ~/.agents/skills/
